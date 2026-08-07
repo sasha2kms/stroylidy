@@ -6,6 +6,7 @@
 'use strict';
 
 (() => {
+  document.documentElement.classList.add('js');
   /* ---------- 0. ПОМОЩНИКИ ---------- */
   const byId = (id) => document.getElementById(id);
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
