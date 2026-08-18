@@ -819,6 +819,7 @@ output { display: inline-block; }
 
 .step__card {
   position: relative;
+  width: 100%;
   padding: 26px 24px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -1234,6 +1235,19 @@ output { display: inline-block; }
 .footer__contact-link:hover { color: var(--orange); }
 .footer__contact-link:hover::after { transform: scaleX(1); }
 
+/* Иконки контактов с переливом */
+.footer__contact-icon {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 9px;
+  vertical-align: -3px;
+}
+.footer__contact-icon svg {
+  width: 18px;
+  height: 18px;
+  filter: drop-shadow(0 0 5px rgba(255, 107, 26, .45));
+}
+
 .footer__contact-item--geo {
   display: inline-flex;
   align-items: center;
@@ -1440,6 +1454,7 @@ output { display: inline-block; }
     align-items: center;
     text-align: center;
   }
+  .step__card { flex: 1; }
   .step__dot { position: relative; left: auto; top: auto; margin-bottom: 20px; }
   .step__icon { margin-inline: auto; }
   .step__tag { justify-self: center; }
