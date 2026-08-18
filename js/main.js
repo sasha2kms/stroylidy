@@ -222,7 +222,7 @@
     // Динамическая стоимость контакта (20 или 60 рублей)
        // Динамическая стоимость контакта (20 или 60 рублей для партнеров)
     const selectedRateRadio = document.querySelector('input[name="service-rate"]:checked');
-    const currentPricePerLead = selectedRateRadio ? +selectedRateRadio.value : 20; // Изменили 35 на 20
+    const currentPricePerLead = selectedRateRadio ? +selectedRateRadio.value : 35; 
 
 
     // Подсветка активной плитки тарифа
